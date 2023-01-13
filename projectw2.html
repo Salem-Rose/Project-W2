@@ -7,16 +7,25 @@
   </head>
   <body>
     <h1>Program Language Suggester</h1>
-    <p>Interested in coding? Need help to decide which language you should learn first? Then you are at the right place! Select one of the questions below to help you decide which language you should learn first.</p>
+    <p>Interested in coding? Need help to decide which language you should learn first? Then you are at the right place! Fill out this form to help you decide what language you should learn first.</p>
+    
+    <form>
+      <label for="question1Input">What is your name?</label>
+      <input id="question1Input" type="text" name="question1Input">
+      <label for="question2Input">Where do you live?</label>
+      <input id="question2Input" type="text" name="question2Input">
+      <label for="question3Input">What is your age?</label>
+      <input id="question3Input" type="number" name="question3Input">
+      <label for="question4Input">How many computers do you own?</label>
+      <input id="question4Input" type="number" name="question4Input">
+      <button type="submit">Submit</button>
+    </form>
 
-   <form id="select-form">
-    <select id="beverage">
-      <option>I enjoy mining</option>
-      <option>I enjoy hunting</option>
-      <option>I enjoy skiing</option>
-    </select>
-    <button type = "submit">Submit Selection</button>
-   </form>
-
+    <div id="aboutme" class="hidden">
+      <h1>About Me</h1>
+      <p>
+        My name is, <span id="question1Input">_______</span> and I live in <span id="question2Input">_______</span>. I am <span id="question3Input">_______</span> years old. I currently own <span id="quesiton4Input">_______ computer. </span>
+      </p>
+    </div>
   </body>
 </html>
