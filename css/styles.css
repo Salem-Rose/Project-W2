@@ -2,7 +2,12 @@
   display: none;
 }
 
-#error-message {
-  font-weight: 600
-  color: red;
+html {
+  background-color:lightblue;
+}
+
+head {
+  font-size: 10px; 
+  font-family: "Open Sans", sans-serif; 
+  
 }
