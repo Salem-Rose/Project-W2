@@ -9,21 +9,35 @@
     <div>
       <h1>Programming Language Suggester</h1>
       
-      <p>Interested in coding? Need help to decide which language you should learn first? Then you are at the right place! Answer these questions to help you decide what language you should learn first.
-      </p>
+      <p>Interested in coding? Need help to decide which language you should learn first? Then you are at the right place! Answer these questions to help you decide what language you should learn first.</p>
 
       <form id="userInfo">
-        <label for="name">What is your name?</label>
-        <input id="name" type="text">
+        <p id="error-message" class="hidden">Please enter answers whole text: yes or no.</p>
+        <label for="letter">Does your name start with the letter G?</label>
+        <input id="letter" type="text" name="letter"><br>
         <label for="color">Is your favorite color brown?</label>
-        <input id="color" type="text">
+        <input id="color" type="text" name="color"><br>
         <label for="mining">Do you enjoy mining?</label>
-        <input id="mining" type="text">
+        <input id="mining" type="text" name="mining"><br>
         <label for="skiing">Have you skied before?</label>
-        <input id="skiing" type="text">
+        <input id="skiing" type="text" name="skiing"><br>
         <label for="snake">Do you own a pet snake?</label>
-        <input id="snake" type="text">
+        <input id="snake" type="text" name="snake"><br>
+        <button type="submit">Show me what language I should learn first!</button>
       </form>
+    
+      <div id="mining" class="hidden">
+        <h1>Ruby Language</h1>
+        <p>If you answered yes to all the questions, then you might enjoy learning Ruby language first.</p>
+      </div>
+      <div id="skiing" class="hidden">
+        <h1>Swift Language</h1>
+        <p>If you answered yes to two questions, then you might enjoy learning Swift language first.</p>
+      </div>
+      <div id="snake" class="hidden">
+        <h1>Python Language</h1>
+        <p>If you answered no to all the questions, then you might enjoy learning Python language first.</p>
+      </div>    
     </div>
   </body>
 </html>
