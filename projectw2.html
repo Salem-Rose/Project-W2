@@ -3,30 +3,27 @@
   <head>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/scripts.js"></script>
-    <title>Program Language Suggester</title> 
+    <title>Program Language Suggester</title>
   </head>
   <body>
-    <h1>Program Language Suggester</h1>
-    <p>Interested in coding? Need help to decide which language you should learn first? Then you are at the right place! Answer these questions to help you decide what language you should learn first.</p>
-    
-    <form>
-      <label for="question1Input">What is your name?</label>
-      <input id="question1Input" type="text" name="question1Input">
-      <label for="question2Input">Where do you live?</label>
-      <input id="question2Input" type="text" name="question2Input">
-      <label for="question3Input">Can you read and write in English?</label>
-      <input id="question3Input" type="text" name="question3Input">
-      <label for="question4Input">Do you own a computer?</label>
-      <input id="question4Input" type="text" name="question4Input">
-
-      <button type="submit">Submit</button>
-    </form>
-
-    <div id="aboutme" class="hidden">
-      <h1>About Me</h1>
-      <p>
-        My name is, <span id="question1">_______</span> and I live in <span id="question2">_______</span>. I <span id="question3">_______</span> years old. I currently own <span id="question4">_______ computer. </span>
+    <div>
+      <h1>Programming Language Suggester</h1>
+      
+      <p>Interested in coding? Need help to decide which language you should learn first? Then you are at the right place! Answer these questions to help you decide what language you should learn first.
       </p>
+
+      <form id="userInfo">
+        <label for="name">What is your name?</label>
+        <input id="name" type="text">
+        <label for="color">Is your favorite color brown?</label>
+        <input id="color" type="text">
+        <label for="mining">Do you enjoy mining?</label>
+        <input id="mining" type="text">
+        <label for="skiing">Have you skied before?</label>
+        <input id="skiing" type="text">
+        <label for="snake">Do you own a pet snake?</label>
+        <input id="snake" type="text">
+      </form>
     </div>
   </body>
 </html>
